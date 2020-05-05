@@ -33,10 +33,10 @@ class Home extends Component {
 
         return (
             <Aux>
-                <Toolbar items={pages} />
+                {/* <Toolbar items={pages} /> */}
                 <SplashPage image={splashImage} />
-                {renderedPages}
-                <Footer />
+                {/* {renderedPages}
+                <Footer /> */}
             </Aux>
         );
     }
