@@ -1,0 +1,28 @@
+// Global CSS Variables
+$page-padding: 150px;
+$container-padding: 50px;
+
+// Color Theme
+$color-1: #ff533d;
+$color-2: #ab987a;
+$color-3: #f5f5f5;
+$color-4: #0f1626;
+
+// Layers
+$top-layer: 1000;
+$mid-layer: 500;
+$bottom-layer: 0;
+
+// Images
+$resume-image-size: 70px;
+
+// Text
+$text-size: 18px;
+$line-height: 2;
+
+:export {
+    color1: $color-1;
+    color2: $color-2;
+    color3: $color-3;
+    color4: $color-4;
+}

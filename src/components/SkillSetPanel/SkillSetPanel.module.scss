@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+$panel-width: 250px;
+$panel-height: 450px; 
+$image-size: 100px;
+
+.SkillSetPanel {
+    width: $panel-width;
+    height: $panel-height;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid $color-2;
+    transition: 0.5s ease;
+}
+
+.SkillSetPanel:hover {
+    transform: scale(1.03);
+}
+
+.Image {
+    width: $image-size;
+    height: $image-size;
+}
+
+.Title {
+    margin: 40px 0px 20px 0px;
+    font-size: 24px;
+    color: $color-1;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.Description {
+    color: $color-4;
+    font-size: $text-size;
+    line-height: $line-height;
+}

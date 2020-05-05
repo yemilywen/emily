@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.Footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-2;
+    color: $color-3;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Left {
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.Right {
+    font-size: 20px;
+    margin: 5px 0px;
+    letter-spacing: 1px;
+    display: flex;
+
+    i {
+        margin: 0px 5px;
+    }
+}

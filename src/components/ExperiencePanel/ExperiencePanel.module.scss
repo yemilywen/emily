@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.ExperiencePanel {
+    font-size: 18px;
+}
+
+.ExperienceContent {
+    font-size: $text-size;
+    margin: 10px 0px;
+    line-height: $line-height;
+
+    .dash {
+        background-color: $color-1;
+        min-width: 15px;
+        max-width: 15px;
+        height: 3px;
+        display: inline-block;
+        border-radius: 10px;
+        margin: 0px 5px;
+        vertical-align: middle;
+    }
+}
+
+.Image {
+    width: $resume-image-size;
+}
+
+.ExperienceTitle {
+    color: $color-1;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 5px 0px;
+}
+
+.ExperienceSubtitle {
+    letter-spacing: 1px;
+    margin: 5px 0px;
+}
+
+.ExperienceDate {
+    font-size: 14px;
+    margin: 5px 0px;
+}

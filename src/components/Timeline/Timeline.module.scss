@@ -1,0 +1,96 @@
+@import '../../styles/variables.scss';
+
+.Timeline {
+    position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.Timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: $color-1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.Timeline .container {
+    width: 100%;
+    height: 100%;
+}
+
+/* The circles on the timeline */
+.Timeline .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: $color-3;
+    border: 2px solid $color-1;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+  }
+  
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+  
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -15px;
+}
+
+/* Fix the circle for containers on the left side */
+.left::after {
+    right: -15px;
+}
+
+.TimelinePanelContainer {
+    display: flex;
+}
+
+.TimelinePanel {
+    background-color: $color-3;
+    border-top: 2px solid $color-2;
+    padding: 50px 0px;
+}
+
+.TimelineHeader {
+    font-size: 18px;
+    color: $color-1;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.left .ImageContainer {
+    box-shadow: -5px 5px $color-4;
+}
+
+.right .ImageContainer {
+    box-shadow: 5px 5px $color-4;
+}
+
+.ImageContainer {
+    width: 100%;
+    height: 100%;
+    border: 2px solid $color-2;
+    transition: 0.5s ease;
+    max-height: 500px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ImageContainer:hover {
+    transform: scale(1.03);
+}

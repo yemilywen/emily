@@ -1,0 +1,26 @@
+.Container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.SplitContainer {
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Middle {
+    justify-content: center;
+}
+
+.AlignLeft {
+    align-items: flex-start;
+}
+
+.AlignRight {
+    align-items: flex-end;
+}

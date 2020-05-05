@@ -1,0 +1,93 @@
+.hide {
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.moveRight {
+    animation: moveRight 1s;
+}
+
+@keyframes moveRight {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.moveLeft {
+    animation: moveLeft 1s;
+}
+
+@keyframes moveLeft {
+    from {
+        opacity: 0;
+        transform: translateX(1500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.moveUp {
+    animation: moveUp 1s;
+}
+
+@keyframes moveUp {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.expand {
+    animation: expand 1s;
+}
+
+@keyframes expand {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.rotate {
+    animation: rotate 1s;
+}
+
+.rotateInfinite {
+    animation: rotate infinite 20s linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

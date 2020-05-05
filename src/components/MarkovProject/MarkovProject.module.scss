@@ -1,0 +1,137 @@
+@import '../../styles/variables.scss';
+
+.MarkovProject {
+    padding: $container-padding;
+    text-align: center;
+    color: black;
+    background-color: white;
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .buttonContainer {
+        text-align: center;
+
+        button {
+            border: 1px solid black;
+            margin: 10px;
+            height: 60px;
+            border-color: #1B95E0;
+            color: #1B95E0;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e6ecf0;
+        }
+    }
+
+    .tweetContainer {
+        border: 1px solid black;
+        text-align: left;
+        padding: 30px 40px;
+        border-radius: 8px;
+        min-width: 640px;
+        max-width: 640px;
+        margin: auto;
+        background-color: white;
+
+        p {
+            margin: 0;
+        }
+
+        .tweetHeader {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            margin-bottom: 15px;
+        }
+
+        .sticky-header {
+            flex: 1;
+        }
+
+        .user-avatar {
+            margin-top: 0;
+            float: left;
+            margin-right: 10px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .userName {
+            display: flex;
+            color: #14171a;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: bold;
+            max-width: 32ch;
+        }
+
+        .twitterName {
+            color: #657786;
+            font-size: 14px;
+        }
+
+        .followButton {
+            width: 105px;
+            text-align: center;
+            border-color: #1B95E0;
+            color: #1B95E0;
+            background-color: white;
+            font-size: 14px;
+            border-radius: 100px;
+            height: 36px;
+            font-weight: bold;
+            outline: none;
+        }
+
+        .followButton:hover {
+            cursor: pointer;
+        }
+
+        .tweetText {
+            font-size: 27px;
+            line-height: 32px;
+            letter-spacing: 0.01em;
+        }
+
+        .extraContainer {
+            margin-top: 10px;
+
+            .timestamp {
+                font-size: 14px;
+                color: #657786;
+            }
+
+            .statusFooter {
+                color: #657786;
+                font-size: 16px;
+                padding: 0px 2px;
+                border-top: 1px solid #e6ecf0;
+                margin-top: 10px;
+            }
+
+            .footerItem {
+                min-width: 80px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .projectDescription {
+        text-align: left;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../../styles/variables.scss';
+
+$toolbar-offset: 25px;
+
+.Toolbar {
+    top: 50px;
+    left: $toolbar-offset;
+    width: $page-padding - $toolbar-offset;
+    height: $page-padding;
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    flex-direction: column;
+    z-index: $top-layer;
+}

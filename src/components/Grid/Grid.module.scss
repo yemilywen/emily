@@ -1,0 +1,13 @@
+.Grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Center {
+    justify-content: center;
+}
+
+.Spread {
+    justify-content: space-evenly;
+}
